@@ -1,0 +1,45 @@
+/*
+    Colors
+    light black: #303841
+    normal grey: #3a4750
+    light greak: #eeeeee
+    bee yellow:  #f6c90e
+
+    grass green: #ccda46
+    pale orange: #fe9801
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #303841;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    /* text-rendering: optimizeLegibility;
+    overflow-x: hidden; */
+}
+
+h1 {
+    font-size: 300%;
+}
+
+/* ------------------------------------------------------ */
+.intro-text {
+    /* display: flex;
+    justify-content: center; */
+    height: 100px;
+    position: absolute;
+    text-align: center;
+    
+    border: 3px solid green;
+    top: 40%;
+    margin: 0 auto;
+}
+/* ------------------------------------------------------ */
