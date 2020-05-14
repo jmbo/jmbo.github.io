@@ -2,44 +2,59 @@
     Colors
     light black: #303841
     normal grey: #3a4750
-    light greak: #eeeeee
+    light grey:  #eeeeee
     bee yellow:  #f6c90e
 
     grass green: #ccda46
     pale orange: #fe9801
 */
 
+/* BASIC RESETS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
 body {
-    background-color: #fff;
+    background-color: #eee;
     color: #303841;
     font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
-    /* text-rendering: optimizeLegibility;
-    overflow-x: hidden; */
-}
-
-h1 {
-    font-size: 300%;
+    line-height: 1.7;
 }
 
 /* ------------------------------------------------------ */
+/* HEADER */
+/* ------------------------------------------------------ */
+
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to top right, rgba(246, 200, 14, 0.9), rgba(243, 150, 1, 0.9));
+}
+
 .intro-text {
-    /* display: flex;
-    justify-content: center; */
-    height: 100px;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
     text-align: center;
-    
     border: 3px solid green;
-    top: 40%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
-/* ------------------------------------------------------ */
+
+.heading-primary {
+
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 250%;
+}
+
+.heading-primary-sub {
+    display: block;
+}
