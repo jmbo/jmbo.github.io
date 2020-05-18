@@ -32,13 +32,29 @@ body {
     line-height: 1.7;
 }
 
+/* .clearfix {
+    overflow: auto; //comment out
+    zoom: 1;
+}
+.clearfix:after {
+    content: '.';
+    clear: right;
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+} */
+
 /* ------------------------------------------------------ */
 /* HEADER */
 /* ------------------------------------------------------ */
 .header {
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(to top right, rgba(246, 200, 14, 0.9), rgba(243, 150, 1, 0.9));
+    background-image: url(../../vendors/img/subtle-prism.svg);
+    /* background-color: #f6c90e; */
+    /* background-attachment: fixed; */
+    background-size: cover;
 }
 
 /* .header__nav {
@@ -82,4 +98,64 @@ body {
 .heading-primary--sub {
     display: block;
     font-size: 4rem;
+}
+
+/* ------------------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------------------ */
+.footer {
+    font-size: 1.6rem;
+    height: 10rem;
+    background-color: #303841;
+    color: #eee;
+}
+
+.copyright-box {
+    float: left;
+    width: 50%;
+    padding-top: 2.6rem;
+    padding-left: 3rem;
+    /* vertical-align: middle; */
+}
+
+.social-media {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.social-links li {
+    display: inline-block;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+    font-size: 3rem;
+    list-style: none;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    color: #eee;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-github:hover {
+    color: #000000;
+}
+
+.ion-email:hover {
+    color: #dd4b39;
+}
+
+.made-box {
+    clear: both;
+    text-align: center;
+    word-spacing: .5rem;
+}
+
+.ion-heart {
+    color: #ff0000;
 }
