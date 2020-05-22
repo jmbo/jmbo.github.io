@@ -1,0 +1,4 @@
+baseURL = "https://www.bohorques.com/"
+languageCode = "en-us"
+title = "Hey there, I'm Jose!"
+theme = "ananke"
