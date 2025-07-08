@@ -19,8 +19,8 @@
 }
 
 html {
-    font-size: 62.5%;
     /* font-size: 10px; */
+    font-size: 62.5%;
 }
 
 body {
@@ -57,9 +57,10 @@ body {
     background-size: cover;
 }
 
-/* .header__nav {
-
-} */
+.header__nav {
+    /* background-color: #eeeeee; */
+    opacity: .5;
+}
 
 .nav-items {
     padding: 1.5rem;
@@ -81,7 +82,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
+    width: 90%;
+
     text-align: center;
     /* margin: 0 auto; */
 }
@@ -158,4 +160,26 @@ body {
 
 .ion-heart {
     color: #ff0000;
+    word-spacing: 1rem;
+}
+
+.pulse-icon {
+    /* font-size: 27px; */
+    /* transform-origin: center; */
+    display: inline-block;
+    animation: pulse 2s infinite ease-in-out;
+
+
+}
+
+@keyframes pulse {
+    /* 0%   { font-size: 27px; opacity: 1; }
+    50%  { font-size: 24px; opacity: 0.50; }
+    100% { font-size: 27px; opacity: 1; } */
+
+    0%   { transform: scale(.9); opacity: 0.5; }
+    20%  { transform: scale(1.1); opacity: 0.8; }
+    30%  { transform: scale(1.5); opacity: 1; }
+    60%  { transform: scale(1.5); opacity: 1; }
+    100% { transform: scale(.9); opacity: 0.5; }
 }
