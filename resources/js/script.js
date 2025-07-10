@@ -8,9 +8,10 @@ cpYear.textContent = new Date().getFullYear();
 const whoAmI = document.querySelector(".who-am-i");
 const items = [
   "a developer",
-  "a designer",
+  //   "a designer",
   "an engineer",
-  "an adventurer",
+  "a traveler",
+  //   "an adventurer",
   "Jose!",
 ];
 
