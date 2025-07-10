@@ -9,6 +9,27 @@
     pale orange: #fe9801
 */
 
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-tertiary: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-tertiary-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-tertiary-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
+
+  --background-color: #e4e4e4;
+  --background-color2: #eeeeee; /* light grey */
+  --background-color-dark: #3a4750; /* normal grey */
+  --background-color-dark2: #303841; /* light black */
+  --text-color: #e4e4e4;
+  --text-color-dark: #303841;
+}
+
 /* BASIC RESETS */
 *,
 *::after,
@@ -32,11 +53,16 @@ body {
 
     min-height: 100vh;
     box-sizing: border-box;
-    background-color: #e4e4e4;
-    color: #303841;
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 400;
     line-height: 1.7;
+}
+
+body.dark-theme {
+    background-color: var(--background-color-dark);
+    color: var(--text-color);
 }
 
 /* .clearfix {
@@ -61,15 +87,24 @@ body {
     flex-direction: column;
     /* height: 40vh; */
     height: 30rem;
-    background-image: url(../../vendors/img/subtle-prism.svg);
+    /* Shout to Matt at svgbackgrounds.com for these backgrounds
+    Subtle Prism
+    Light Settings - Color: #F6C90E #FE9801  Scale: 526 Opacity: 0.1, Angle: 330
+    Dark Settings - Color: #1000EA #07005E Scale: 526 Opacity: 0.1, Angle: 0
+    */
+    background-image: url(../../vendors/img/subtle-prism-dark.svg);
     /* background-color: #f6c90e; */
     /* background-attachment: fixed; */
+
     background-size: cover;
 }
 
 .header__nav {
-    background-color: #eeeeee;
+    background-color: var(--background-color2);
     opacity: 1;
+}
+.header__nav.dark-theme {
+    background-color: var(--background-color-dark2);
 }
 
 .nav-items {
@@ -86,6 +121,7 @@ body {
 
 .nav-items__item a {
     text-decoration: none;
+    color: inherit
 }
 
 .header__intro-text {
@@ -117,7 +153,6 @@ body {
 /* SECTION */
 /* ------------------------------------------------------ */
 .about_me {
-    background-color: #e4e4e4;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -147,14 +182,28 @@ body {
 }
 
 /* ------------------------------------------------------ */
+/* THEME CHANGER */
+/* ------------------------------------------------------ */
+.bth-theme {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1.2rem 2rem;
+    font-size: 3rem;
+    z-index: 9999;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.15); */
+    text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+/* ------------------------------------------------------ */
 /* FOOTER */
 /* ------------------------------------------------------ */
 .footer {
     margin-top: auto;
     height: 10rem;
     font-size: 1.6rem;
-    background-color: #303841;
-    color: #eee;
+    background-color: var(--background-color-dark2);
+    color: var(--text-color);
 }
 
 .copyright-box {
@@ -182,7 +231,7 @@ body {
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
-    color: #eee;
+    color: var(--text-color);
 }
 
 .ion-social-twitter:hover {
