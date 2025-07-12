@@ -31,6 +31,12 @@
   /* --gradient-primary: linear-gradient(to top left, #39b385, #9be15d); */
   /* --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03); */
 
+  /* Shout to Matt at svgbackgrounds.com for these backgrounds
+     Subtle Prism
+     Light Settings - Color: #F6C90E #FE9801  Scale: 526 Opacity: 0.1, Angle: 330
+     Dark Settings - Color: #1000EA #07005E Scale: 526 Opacity: 0.1, Angle: 0
+  */
+  --header-background: url(../../vendors/img/subtle-prism-light.svg);
 
   --gradient: linear-gradient(to top left, #FE9801, #F6C90E);
   --gradient-rev: linear-gradient(to top left, #F6C90E, #FE9801);
@@ -50,6 +56,8 @@ body.dark-theme {
   --dimmer: #64686a;
   --dimmest: #464b4f;
   --link-color: #b2b4b5; */
+  --header-background: url(../../vendors/img/subtle-prism-dark.svg);
+
   --gradient: linear-gradient(to top left, #07005E, #1000EA);
   --gradient-rev: linear-gradient(to top left, #1000EA, #07005E);
 
@@ -154,15 +162,9 @@ ion-icon {
     flex-direction: column;
     /* height: 40vh; */
     height: 30rem;
-    /* Shout to Matt at svgbackgrounds.com for these backgrounds
-    Subtle Prism
-    Light Settings - Color: #F6C90E #FE9801  Scale: 526 Opacity: 0.1, Angle: 330
-    Dark Settings - Color: #1000EA #07005E Scale: 526 Opacity: 0.1, Angle: 0
-    */
-    background-image: url(../../vendors/img/subtle-prism-dark.svg);
+    background-image: var(--header-background);
     /* background-color: #f6c90e; */
     /* background-attachment: fixed; */
-
     background-size: cover;
 }
 

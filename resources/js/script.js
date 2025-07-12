@@ -82,20 +82,12 @@ window.addEventListener("load", updateButtonPosition);
 
 btn.addEventListener("click", function () {
   const body = document.querySelector("body");
-  const header = document.querySelector(".header");
-  const headerNav = document.querySelector(".header__nav");
 
   if (btn.textContent === "☀️") {
     btn.textContent = "🌙";
     body.classList.remove("dark-theme");
-    header.style.backgroundImage =
-      "url(../../vendors/img/subtle-prism-light.svg)";
-    headerNav.classList.remove("dark-theme");
   } else {
     btn.textContent = "☀️";
     body.classList.add("dark-theme");
-    header.style.backgroundImage =
-      "url(../../vendors/img/subtle-prism-dark.svg)";
-    headerNav.classList.add("dark-theme");
   }
 });
